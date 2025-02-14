@@ -6,9 +6,169 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline bg-blue-200">
-    Hello world!
-  </h1>
-  <h2 class="font-bold bg-amber-300">This is a test</h2>
+   <!-- Tablet nav -->
+   <nav class="lg:hidden border-t-6 border-yellow-600 w-full mb-2  bg-[#0C2340] md:flex justify-center ">
+    <img class="" width="" src="assets/unilogo.png" alt="">
+  </nav>
+
+  <!-- mobile nav --> 
+  
+  
+  <nav class="my-5 flex justify-around items-center lg:hidden">
+    <!-- Home Icon -->
+    <span class="text-xs font-light tracking-tighter flex flex-col justify-center items-center gap-0 " >
+      <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM6 19H18V9.15745L12 3.7029L6 9.15745V19ZM9 9.99998H15V16H9V9.99998ZM11 12V14H13V12H11Z"></path></svg>
+      <span>HOME</span>
+    </span>
+    <!-- Contact Icon -->
+    <span class="text-xs font-light tracking-tighter flex flex-col justify-center items-center gap-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" fill="currentColor"><path d="M20 22H6C4.34315 22 3 20.6569 3 19V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V18H6C5.44772 18 5 18.4477 5 19C5 19.5523 5.44772 20 6 20H19ZM5 16.1707C5.31278 16.0602 5.64936 16 6 16H19V4H6C5.44772 4 5 4.44772 5 5V16.1707ZM12 10C10.8954 10 10 9.10457 10 8C10 6.89543 10.8954 6 12 6C13.1046 6 14 6.89543 14 8C14 9.10457 13.1046 10 12 10ZM9 14C9 12.3431 10.3431 11 12 11C13.6569 11 15 12.3431 15 14H9Z"></path></svg>
+      <span>CONTACT</span>
+    </span >
+    <!-- Search Icon -->
+     <span class="text-xs font-light tracking-tighter flex flex-col justify-center items-center gap-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+      <span>SEARCH</span>
+    </span>
+     <!-- Menu Icon -->
+      <span class="text-xs font-light tracking-tighter flex flex-col justify-center items-center gap-0">
+        <img src="assets/icons8-grip-lines-32.png" width="30" alt="">
+        <span>MENU</span>
+      </span>
+
+  </nav>
+
+  <nav class="lg:hidden relative w-full h-3/4  bg-cover bg-center object-cover flex flex-col items-center justify-center gap-6 md:items-end" style="background-image: url('assets/campus_spring_scenic-800.webp');">
+    <div class="absolute inset-0 bg-cyan-950 opacity-50"></div>
+    <div class="z-10 mt-8  text-white text-4xl font-bold font-serif uppercase md:mr-7">
+      <h1 class="flex justify-end">What</h1>
+      <h1 class="flex justify-end">would</h1>
+      <h1 class="flex gap-3 justify-end items-center"><span><img src="assets/favicon.ico" alt=""></span> you</h1>
+      <h1 class="flex justify-end">fight</h1>
+      <h1 class="flex justify-end">for?</h1>
+    </div>
+
+    <div class="text-white right-5 bottom-16 text-lg flex flex-col gap-2 z-10 md:mr-7">
+      <h1 class="md:flex justify-end">Notre Dame attracts people willing to</h1>
+      <h1 class="md:flex justify-end">take action to find solutions to</h1>
+      <h1 class="md:flex justify-end">humanity's most pressing challenges.</h1>
+      <h1 class="md:flex justify-end">"What would you fight for?" For us, it's</h1>
+      <h1 class="md:flex justify-end">not a question. It's a call to action. We are</h1>
+      <h1 class="md:flex justify-end">the Fighting Irish.</h1>
+    </div>
+
+    <button class=" mb-8 bg-white text-blue-700 p-3 rounded-xl z-10 md:mr-7">What would you fight for?</button>
+   </nav>
+
+ 
+  
+  <!-- Desktop Nav -->
+   <nav class="hidden lg:block relative w-full border-t-6 border-yellow-600 h-screen bg-cover bg-center md:h-200 object-cover " style="background-image: url('assets/campus_spring_scenic-800.webp');">
+    <div class="absolute inset-0 bg-cyan-950 opacity-50"></div>
+    <div class="bg-[#0C2340] relative h-30 z-10">
+      <img class="p-4 ml-4" src="assets/unilogo.png" alt="">
+      <ul class="absolute top-0 right-10  text-white font-mono flex gap-4  p-4">
+        <li class="font-bold">About</li>
+        <li class="font-bold">Visit</li>
+        <li>Give</li>
+        <li>Alumni</li>
+        <li>Athletics</li>
+      </ul>
+    </div>
+    
+    <div class="bg-white text-black shadow-md absolute top-22 right-8 h-15 flex justify-center items-center p-2 z-10 w-4/6">
+      <ul class="flex gap-12 text-gray-600 justify-between items-center mx-4">
+        <li>Academics</li>
+        <li>Admissions</li>
+        <li>Research</li>
+        <li>Global</li>
+        <li>Faith & services</li>
+        <li>Campus live</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg></li>
+      </ul>
+    </div>
+
+    <div class="z-10 absolute text-white text-6xl font-extrabold font-serif  right-5 bottom-80  uppercase">
+      <h1 class="flex justify-end">What</h1>
+      <h1 class="flex justify-end">would</h1>
+      <h1 class="flex gap-3 justify-end items-center"><span><img src="assets/favicon.ico" alt=""></span> you</h1>
+      <h1 class="flex justify-end">fight</h1>
+      <h1 class="flex justify-end">for?</h1>
+    </div>
+
+    <div class="absolute text-white right-5 bottom-16 text-3xl flex flex-col gap-2">
+      <h1 class="flex justify-end">Notre Dame attracts people willing to</h1>
+      <h1 class="flex justify-end">take action to find solutions to</h1>
+      <h1 class="flex justify-end">humanity's most pressing challenges.</h1>
+      <h1 class="flex justify-end">"What would you fight for?" For us, it's</h1>
+      <h1 class="flex justify-end">not a question. It's a call to action. We are</h1>
+      <h1 class="flex justify-end">the Fighting Irish.</h1>
+    </div>
+
+    <button class="absolute bg-white text-blue-700 p-3 rounded-xl right-5 bottom-1">What would you fight for?</button>
+   </nav>
+
+   <section class="lg:hidden p-4 w-full hover:scale-y-105 delay-300 transition-transform md:flex gap-4">
+      <img class="md:w-1/2" src="assets/globering_2025.jpg" alt="">
+      <div class="flex justify-between md:justify-evenly hover:*:visible">
+        <div class="p-4">
+            <h1 class="text-xl text-yellow-950 font-light">University</h1>
+            <ul class="text-gray-800 text-xl">
+              <li>University of Notre</li>
+              <li>Dame wins award for</li>
+              <li>excellence in campus</li>
+              <li>internationalization</li>
+            </ul>
+        </div>
+        <svg class="fill-yellow-600 justify-self-end md:ml-20 invisible " xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+      </div>
+   </section>
+
+  <!-- desktop and tablet -->
+   <section class="lg:flex gap-4 justify-between my-4 hidden">
+    <img class="w-2/6" src="assets/globering_2025.jpg" alt="">
+
+    <div class="hover:bg-gray-200 h-3/4 p-6 self-center hover:scale-105 delay-100 transition-transform flex justify-center items-center mr-30 hover:*:visible">
+      <div>
+        <h2 class="uppercase text-xl text-yellow-950 font-light self-start">colleges and schools</h2>
+        <p class="text-gray-800 text-xl">Physist Laura Fields granted a Presidential Early Career Award</p>
+      </div>
+      <svg class="fill-yellow-600 justify-self-end self-center md:ml-20 invisible " xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+    </div>
+   </section>
+
+   <section class="lg:hidden  sm:hidden p-4 m-4 hover:bg-gray-200 hover:scale-105 delay-100 transition-transform">
+    <div class="flex justify-between md:justify-start hover:*:visible">
+      <div class="">
+          <h1 class="text-xl text-yellow-950 font-light uppercase">colleges and schools</h1>
+          <ul class="text-gray-800 text-xl">
+            <li class="md:hidden">Physist Laura Fields</li>
+            <li class="md:hidden">granted a Presidential</li>
+            <li class="md:hidden">Early Career Award</li>
+          </ul>
+      </div>
+      <svg class="fill-yellow-600 justify-self-end md:ml-20 invisible" xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+    </div>
+   </section>
+
+   <section class="sm:block hidden p-4 m-4 hover:bg-gray-200 hover:scale-105 delay-100 transition-transform">
+    <div class="flex justify-between md:justify-start hover:*:visible">
+      <div class="">
+          <h1 class="text-xl text-yellow-950 font-light uppercase">colleges and schools</h1>
+          <ul class="text-gray-800 text-xl">
+            <li class="md:hidden">Physist Laura Fields</li>
+            <li class="md:hidden">granted a Presidential</li>
+            <li class="md:hidden">Early Career Award</li>
+          </ul>
+      </div>
+      <svg class="fill-yellow-600 justify-self-end md:ml-20 invisible" xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+    </div>
+   </section>
+
+
+
+   
+
+  
 </body>
 </html>

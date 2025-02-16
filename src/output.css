@@ -881,14 +881,8 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-2\/3 {
     height: calc(2/3 * 100%);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\/4 {
     height: calc(3/4 * 100%);
@@ -917,29 +911,23 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-1\/4 {
     width: calc(1/4 * 100%);
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
+  }
+  .w-2\/4 {
+    width: calc(2/4 * 100%);
   }
   .w-2\/6 {
     width: calc(2/6 * 100%);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/7 {
     width: calc(3/7 * 100%);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
   }
   .w-4\/6 {
     width: calc(4/6 * 100%);
@@ -1651,6 +1639,9 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1943,21 +1934,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .leading-1 {
-    --tw-leading: calc(var(--spacing) * 1);
-    line-height: calc(var(--spacing) * 1);
-  }
-  .leading-4 {
-    --tw-leading: calc(var(--spacing) * 4);
-    line-height: calc(var(--spacing) * 4);
-  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
-  }
-  .leading-10 {
-    --tw-leading: calc(var(--spacing) * 10);
-    line-height: calc(var(--spacing) * 10);
   }
   .leading-none {
     --tw-leading: 1;
@@ -2634,11 +2613,6 @@
       display: block;
     }
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
@@ -2647,21 +2621,6 @@
   .sm\:w-1\/2 {
     @media (width >= 40rem) {
       width: calc(1/2 * 100%);
-    }
-  }
-  .sm\:flex-col {
-    @media (width >= 40rem) {
-      flex-direction: column;
-    }
-  }
-  .sm\:flex-row {
-    @media (width >= 40rem) {
-      flex-direction: row;
-    }
-  }
-  .md\:m-0 {
-    @media (width >= 48rem) {
-      margin: calc(var(--spacing) * 0);
     }
   }
   .md\:mr-7 {
@@ -2722,11 +2681,6 @@
   .md\:w-1\/4 {
     @media (width >= 48rem) {
       width: calc(1/4 * 100%);
-    }
-  }
-  .md\:w-2\/6 {
-    @media (width >= 48rem) {
-      width: calc(2/6 * 100%);
     }
   }
   .md\:items-center {
